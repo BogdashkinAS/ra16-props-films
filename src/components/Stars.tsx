@@ -24,7 +24,7 @@ export default function Stars({ count }: { count: number }) {
   //   console.log('not is of type number');
   // }
 
-  const item = Array.from({ length: count }, (_, i) => <Star key={Math.random()}/>);
+  const item = Array.from({ length: count }, () => <Star key={Math.random()}/>);
   
 
   return (
